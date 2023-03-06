@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import { React, useState } from 'react';
 import './App.scss';
-import Menu from './components/menu/Menu';
 import Tabs from './components/tabs';
 
 const getInitial = (context) => {
@@ -18,7 +17,6 @@ const App = (context) => {
 	const extendedContext = { ...{ ...context, state, setState }};
 
 	return <Box className="App">
-		<Menu { ...extendedContext }/>
 		<Tabs { ...extendedContext }/>
 	</Box>;
 };
