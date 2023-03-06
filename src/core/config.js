@@ -1,3 +1,93 @@
-const config = {};
+const config = {
+	kids: ['porridges', 'pancakeMix'],
+	newMoms: ['pregnancy', 'lactation'],
+	adults: ['healthMix', 'diabeticFriendly'],
+	productsList: [
+		{
+			type: 'kids',
+			productType: 'porridges',
+			productName: 'Sprouted Ragi Almond',
+			img: '',
+			price: 230,
+		},
+		{
+			type: 'kids',
+			productType: 'porridges',
+			productName: 'Trillet Cereal',
+			img: '',
+			price: '300',
+		},
+		{
+			type: 'kids',
+			productType: 'pancakeMix',
+			productName: 'Magic Millet Pancake Mix',
+			img: '',
+			price: '450',
+		},
+		{
+			type: 'kids',
+			productType: 'pancakeMix',
+			productName: 'Cocoa Millet Pancake Mix',
+			img: '',
+			price: 280,
+		},
+		{
+			type: 'newMoms',
+			productType: 'pregnancy',
+			productName: 'Black Urad Dal',
+			img: '',
+			price: '350',
+		},
+		{
+			type: 'newMoms',
+			productType: 'pregnancy',
+			productName: 'New Moms Buddy',
+			img: '',
+			price: '450',
+		},
+		{
+			type: 'newMoms',
+			productType: 'lactation',
+			productName: 'Almond Instant Milk',
+			img: '',
+			price: '400',
+		},
+		{
+			type: 'newMoms',
+			productType: 'lactation',
+			productName: '37 Ingredient Health Mix',
+			img: '',
+			price: '1000',
+		},
+		{
+			type: 'adults',
+			productType: 'healthMix',
+			productName: 'Sprouted Ragi Moong DalMix',
+			img: '',
+			price: '300',
+		},
+		{
+			type: 'adults',
+			productType: 'healthMix',
+			productName: 'Banana Sprouted Ragi Mix',
+			img: '',
+			price: '350',
+		},
+		{
+			type: 'adults',
+			productType: 'diabeticFriendly',
+			productName: 'Sprouted Ragi Almond Mix',
+			img: '',
+			price: '500',
+		},
+		{
+			type: 'adults',
+			productType: 'diabeticFriendly',
+			productName: '37 Ingredients Mix',
+			img: '',
+			price: '1000',
+		},
+	],
+};
 
 export default config;
