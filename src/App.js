@@ -16,9 +16,13 @@ const App = (context) => {
 	const [state, setState] = useState(getInitial(context));
 	const extendedContext = { ...{ ...context, state, setState }};
 
-	return <Box className="App">
-		<Tabs { ...extendedContext }/>
-	</Box>;
+	return (
+		<Box
+			className="App"
+			style={ { backgroundImage: `url(${ `${ process.env.PUBLIC_URL }/img/backgroundImage.png` })` } }
+		>
+			<Tabs { ...extendedContext }/>
+		</Box>);
 };
 
 export default App;

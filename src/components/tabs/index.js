@@ -2,6 +2,7 @@ import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Box, Tab } from '@mui/material';
 import React from 'react'
 ;
+import Screen from '../menu/screen/Screen';
 const Tabs = (context) => {
 	const { setState, state: { tabs }} = context;
 
@@ -17,7 +18,7 @@ const Tabs = (context) => {
 				<Tab label="Item Three" value="3"/>
 			</TabList>
 		</Box>
-		<TabPanel value="1">Item One</TabPanel>
+		<TabPanel value="1"><Screen { ...context }/></TabPanel>
 		<TabPanel value="2">Item Two</TabPanel>
 		<TabPanel value="3">Item Three</TabPanel>
 	</TabContext>;
