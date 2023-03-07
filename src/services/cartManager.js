@@ -1,3 +1,5 @@
+import { rndString } from '@laufire/utils/random';
+
 const filters = {
 	porridges: ({ state: { products }}) =>
 		products.filter((product) => product.productType === 'porridges'),
@@ -15,11 +17,30 @@ const filters = {
 
 };
 
-const getFilter = (context) =>
-	filters[context.state.category](context);
+const getToggleProduct = (context) => {
+	const { state: { products, isChecked }, data } = context;
+
+	return products.map((product) => (product.id === data.id
+		? { ...product, isChecked: !isChecked }
+		: product));
+};
+
+const getFilter = (context) => {
+	const { state: { category }} = context;
+
+	return filters[category](context);
+};
+
+const idLength = 5;
+const getId = (config) => config.productsList.map((product) =>
+	({ ...product,
+		id: rndString(idLength),
+		isChecked: false }));
 
 const cartManager = {
 	getFilter,
+	getId,
+	getToggleProduct,
 	filters,
 };
 

@@ -13,6 +13,11 @@
 	width: 220px;
 }
 
+.addProduct{
+	position: relative;
+	top:-102%;
+	left:-43%;
+}
 .screen {
 	display: flex;
 	flex-wrap: wrap;
@@ -30,4 +35,10 @@
 	justify-content: flex-end;
 	top: 300px;
 
+}
+
+.checkBox {
+	position: relative;
+	top:-100%;
+	left:-43%;
 }

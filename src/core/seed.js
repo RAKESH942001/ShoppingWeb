@@ -1,8 +1,10 @@
+import cartManager from '../services/cartManager';
 import config from './config';
 
 const seed = {
-	currentState: { kid: '', newMom: '', adult: '' },
-	products: config.productsList,
+	category: '',
+	products: cartManager.getId(config),
+	carts: [],
 };
 
 export default seed;
