@@ -20,7 +20,14 @@
 }
 
 .menu {
-	width: 100vw;
-	height: 100px;
-	background-color: olive;
+	display: flex;
+	justify-content: center;
+	background-color: peachpuff;
+}
+
+.container {
+	display: flex;
+	justify-content: flex-end;
+	top: 300px;
+
 }

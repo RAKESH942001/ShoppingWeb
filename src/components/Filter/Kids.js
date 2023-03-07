@@ -2,10 +2,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { peek } from '@laufire/utils/debug';
-import Options from '../Options';
 
 const Kids = (context) => {
 	const { state, setState, config: { kids }} = context;
@@ -15,17 +14,19 @@ const Kids = (context) => {
 			category: event.target.value });
 	};
 
-	peek(state);
 	return (
-		<Box sx={ { minWidth: 150 } }>
-			<FormControl>
+		<Box>
+			<FormControl sx={ { minWidth: 150 } }>
 				<InputLabel>kids</InputLabel>
 				<Select
 					label="kids"
 					value={ state.category }
 					onChange={ handleChange }
 				>
-					<Options { ...{ ...context, data: kids } }/>
+					{kids.map((product, key) =>
+						<MenuItem key={ key }value={ product }>
+							{product}
+						</MenuItem>)}
 				</Select>
 			</FormControl>
 		</Box>
