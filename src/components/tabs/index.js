@@ -1,9 +1,9 @@
 import React from 'react';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Box, Tab } from '@mui/material';
-import Filter from '../Filter';
 import Products from '../products/Products';
 import Cart from '../cart/Cart';
+import Header from '../Header';
 
 const Tabs = (context) => {
 	const { setState, state: { tabs }, config: { tabLabel }} = context;
@@ -22,7 +22,7 @@ const Tabs = (context) => {
 				</TabList>
 			</Box>
 			<TabPanel value="product"><Products { ...context }/></TabPanel>
-			<TabPanel value="filter"><Filter { ...context }/> </TabPanel>
+			<TabPanel value="filter"><Header { ...context }/> </TabPanel>
 			<TabPanel value="cart"> <Cart { ...context }/> </TabPanel>
 		</TabContext>);
 };

@@ -16,7 +16,7 @@ const NewMoms = (context) => {
 
 	return (
 		<Box>
-			<FormControl sx={ { minWidth: 120 } }>
+			<FormControl variant="standard" sx={ { minWidth: 120 } }>
 				<InputLabel>NewMoms</InputLabel>
 				<Select
 					label="NewMoms"
