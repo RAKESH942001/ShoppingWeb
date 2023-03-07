@@ -1,19 +1,26 @@
 .App {
 	text-align: center;
-		button {
+
+	button {
 		font-weight: bold;
 	}
 }
 
 .productDetails {
 	flex-basis: 309px;
-   border: 2px solid;
-   height: 245px;
-   width: 220px;
+	border: 2px solid;
+	height: 245px;
+	width: 220px;
 }
 
 .screen {
-	display:flex;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.menu {
+	width: 100vw;
+	height: 100px;
+	background-color: olive;
 }

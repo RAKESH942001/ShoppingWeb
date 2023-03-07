@@ -1,6 +1,7 @@
+import { MenuItem } from '@mui/material';
 import React from 'react';
 
 const Options = ({ data }) => data.map((datum, key) =>
-	<option key={ key } value={ datum }>{datum}</option>);
+	<MenuItem key={ key } value={ datum }>{datum}</MenuItem>);
 
 export default Options;
