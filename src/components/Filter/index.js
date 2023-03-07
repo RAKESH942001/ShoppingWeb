@@ -1,16 +1,18 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import Adults from './Adults';
 import Display from './Display';
 import Kids from './Kids';
 import NewMoms from './NewMoms';
 
-const Filter = (context) =>
-	<div className="menu">
+const Filter = (context) => {
+	const { state: { category }} = context;
+
+	return <div className="menu">
 		<Kids { ...context }/>
 		<NewMoms { ...context }/>
 		<Adults { ...context }/>
-		{context.state.category && <Display { ...context }/>}
+		{category && <Display { ...context }/>}
 	</div>;
+};
 
 export default Filter;
