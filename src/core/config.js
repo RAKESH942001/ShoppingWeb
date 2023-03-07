@@ -76,14 +76,14 @@ const config = {
 		{
 			type: 'adults',
 			productType: 'diabeticFriendly',
-			productName: 'Sprouted Ragi Almond Mix',
+			productName: 'Sprouted Ragi Almond Mix(adults)',
 			img: '/img/SpoutedRagiAlmondMix.jpg',
 			price: '500',
 		},
 		{
 			type: 'adults',
 			productType: 'diabeticFriendly',
-			productName: '37 Ingredients Mix',
+			productName: '37 Ingredients Mix(adults)',
 			img: '/img/37IncridentsInstantMix.jpg',
 			price: '1000',
 		},
