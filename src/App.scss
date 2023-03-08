@@ -5,7 +5,14 @@
 		font-weight: bold;
 	}
 }
-
+.cartContainer{
+	position:relative;
+	top:150px;
+	left:1000px;
+	height:100px;
+	width:225px;
+	border: 5px solid ;
+}
 
 .quantity {
 	padding: right 72px ;

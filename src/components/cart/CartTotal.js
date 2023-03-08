@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { React } from 'react';
 import cartManager from '../../services/cartManager';
 
 const CartTotal = (context) =>
-	<Box>
-		<Typography>Cart Total</Typography>
-		<span>Total:{cartManager.getCartTotal(context)}</span>
+	<Box className="cartContainer">
+		<h1>Cart Total</h1>
+		<h2>Total:  {cartManager.getCartTotal(context)}</h2>
 
 	</Box>;
 
