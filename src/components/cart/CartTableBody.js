@@ -1,7 +1,9 @@
+/* eslint-disable max-lines-per-function */
 import { TableBody, TableCell, TableRow } from '@mui/material';
 import React from 'react';
 import ProductImages from '../products/ProductImages';
 import Quantity from './Quantity';
+import SubTotal from './SubTotal';
 
 const CartTableBody = (context) => {
 	const { state: { carts }} = context;
@@ -19,6 +21,9 @@ const CartTableBody = (context) => {
 					<TableCell align="right">{cart.price}</TableCell>
 					<TableCell align="right">
 						<Quantity { ...{ ...context, data: cart } }/>
+					</TableCell>
+					<TableCell align="right">
+						<SubTotal { ...{ ...context, data: cart } }/>
 					</TableCell>
 				</TableRow>)}
 		</TableBody>

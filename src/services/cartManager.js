@@ -17,6 +17,12 @@ const filters = {
 			product.productType === 'diabeticFriendly'),
 
 };
+const getCartTotal = ({ state: { carts }}) => {
+	const subTotal = carts.map((cart) => cart.count * cart.price);
+	const Total = subTotal.reduce((a, b) => a + b);
+
+	return Total;
+};
 
 const getToggleProduct = (context) => {
 	const { state: { products, isFavourite }, data } = context;
@@ -60,6 +66,7 @@ const cartManager = {
 	reduceCount,
 	addCount,
 	getToggleProduct,
+	getCartTotal,
 	filters,
 };
 
