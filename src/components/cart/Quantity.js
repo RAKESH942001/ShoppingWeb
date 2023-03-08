@@ -6,7 +6,7 @@ import cartManager from '../../services/cartManager';
 const Quantity = (context) => {
 	const { setState, data, state } = context;
 
-	return <Box className="quantity">
+	return <Box style={ { paddingRight: '142px' } }>
 		<Button onClick={ () => setState(() => ({
 			...state,
 			carts:	cartManager.addCount(context),
