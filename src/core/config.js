@@ -3,6 +3,7 @@ const config = {
 	kids: ['porridges', 'pancakeMix'],
 	newMoms: ['pregnancy', 'lactation'],
 	adults: ['healthMix', 'diabeticFriendly'],
+	idLength: 5,
 	productsList: [
 		{
 			type: 'kids',

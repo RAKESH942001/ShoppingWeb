@@ -1,3 +1,4 @@
+import { peek } from '@laufire/utils/debug';
 import { rndString } from '@laufire/utils/random';
 
 const filters = {
@@ -18,10 +19,10 @@ const filters = {
 };
 
 const getToggleProduct = (context) => {
-	const { state: { products, isChecked }, data } = context;
+	const { state: { products, isFavourite }, data } = context;
 
 	return products.map((product) => (product.id === data.id
-		? { ...product, isChecked: !isChecked }
+		? { ...product, isFavourite: !isFavourite }
 		: product));
 };
 
@@ -31,15 +32,33 @@ const getFilter = (context) => {
 	return filters[category](context);
 };
 
-const idLength = 5;
 const getId = (config) => config.productsList.map((product) =>
 	({ ...product,
-		id: rndString(idLength),
-		isChecked: false }));
+		id: rndString(config.idLength),
+		count: 1,
+		isFavourite: false }));
+
+const addCount = (context) => {
+	const { state: { carts }, data } = context;
+
+	return	carts.map((cart) => peek(cart.id === data.id
+		? { ...cart, count: data.count + 1 }
+		: cart));
+};
+
+const reduceCount = (context) => {
+	const { state: { carts }, data } = context;
+
+	return carts.map((cart) => (cart.id === data.id
+		? { ...cart, count: data.count - 1 }
+		: cart));
+};
 
 const cartManager = {
 	getFilter,
 	getId,
+	reduceCount,
+	addCount,
 	getToggleProduct,
 	filters,
 };

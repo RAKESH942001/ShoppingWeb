@@ -3,6 +3,7 @@ import config from './config';
 
 const seed = {
 	category: '',
+	tabs: 'product',
 	products: cartManager.getId(config),
 	carts: [],
 };
