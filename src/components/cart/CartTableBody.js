@@ -3,6 +3,7 @@ import { TableBody, TableCell, TableRow } from '@mui/material';
 import React from 'react';
 import ProductImages from '../products/ProductImages';
 import Quantity from './Quantity';
+import Remove from './Remove';
 import SubTotal from './SubTotal';
 
 const CartTableBody = (context) => {
@@ -14,6 +15,9 @@ const CartTableBody = (context) => {
 				<TableRow
 					key={ key }
 				>
+					<TableCell>
+						<Remove { ...{ ...context, data: cart } }/>
+					</TableCell>
 					<TableCell>
 						<ProductImages { ...{ ...context, data: cart } }/>
 					</TableCell>

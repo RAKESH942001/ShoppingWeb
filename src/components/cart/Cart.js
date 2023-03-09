@@ -15,6 +15,7 @@ const Cart = (context) =>
 			<Table sx={ { minWidth: 650 } }>
 				<TableHead>
 					<TableRow>
+						<TableCell> </TableCell>
 						<TableCell>Product</TableCell>
 						<TableCell>Name</TableCell>
 						<TableCell align="right">Price</TableCell>

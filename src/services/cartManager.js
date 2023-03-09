@@ -17,8 +17,7 @@ const filters = {
 
 };
 const getCartTotal = ({ state: { carts }}) => {
-	const subTotal = carts.map((cart) => cart.count * cart.price);
-	const Total = subTotal.reduce((a, b) => a + b);
+	const Total = carts.reduce((acc, cur) => acc + (cur.count * cur.price), 0);
 
 	return Total;
 };
@@ -36,6 +35,8 @@ const getFilter = (context) => {
 
 	return filters[category](context);
 };
+const removeProduct = ({ state: { carts }, data: cart }) =>
+	carts.filter((product) => product.id !== cart.id);
 
 const getId = (config) => config.productsList.map((product) =>
 	({ ...product,
@@ -70,6 +71,7 @@ const addProduct = (context) => {
 };
 
 const cartManager = {
+	removeProduct,
 	getFilter,
 	addProduct,
 	getId,
