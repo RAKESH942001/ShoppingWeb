@@ -11,6 +11,7 @@ const Kids = (context) => {
 
 	const handleChange = (event) => {
 		setState({ ...state,
+			tabs: 'categoryWise',
 			category: event.target.value });
 	};
 
