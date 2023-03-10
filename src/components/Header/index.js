@@ -1,8 +1,7 @@
-/* eslint-disable react/destructuring-assignment */
 import { React } from 'react';
+import AdImage from '../AdImage';
 import Filter from '../Filter';
 import CartIcon from './CartIcon';
-import Display from './Display';
 import FavouriteIcon from './FavouriteIcon';
 import TextInput from './TextInput';
 
@@ -12,7 +11,7 @@ const Header = (context) =>
 		<TextInput { ...context }/>
 		<CartIcon { ...context }/>
 		<FavouriteIcon { ...context }/>
-		{context.state.category && <Display { ...context }/>}
+		<AdImage { ...context }/>
 	</div>;
 
 export default Header;
