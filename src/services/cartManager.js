@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { rndString } from '@laufire/utils/random';
 
 const filters = {
@@ -47,7 +46,7 @@ const getId = (config) => config.productsList.map((product) =>
 const addCount = (context) => {
 	const { state: { carts }, data } = context;
 
-	return	carts.map((cart) => peek(cart.id === data.id
+	return	carts.map((cart) => (cart.id === data.id
 		? { ...cart, count: data.count + 1 }
 		: cart));
 };
@@ -60,8 +59,19 @@ const reduceCount = (context) => {
 		: cart));
 };
 
+const addProduct = (context) => {
+	const { data, state: { carts }} = context;
+
+	return carts.find((cart) => cart.id === data.id)
+		? carts.map((cart) => (cart.id === data.id
+			? { ...cart, count: cart.count + 1 }
+			: data))
+		: [...carts, data];
+};
+
 const cartManager = {
 	getFilter,
+	addProduct,
 	getId,
 	reduceCount,
 	addCount,
