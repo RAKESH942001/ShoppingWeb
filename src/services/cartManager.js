@@ -85,7 +85,7 @@ const addProduct = (context) => {
 	return carts.find((cart) => cart.id === data.id)
 		? carts.map((cart) => (cart.id === data.id
 			? { ...cart, count: cart.count + 1 }
-			: data))
+			: cart))
 		: [...carts, data];
 };
 
