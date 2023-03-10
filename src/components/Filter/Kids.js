@@ -24,7 +24,7 @@ const Kids = (context) => {
 					onChange={ handleChange }
 				>
 					{kids.map((product, key) =>
-						<MenuItem key={ key }value={ product }>
+						<MenuItem key={ key } value={ product }>
 							{product}
 						</MenuItem>)}
 				</Select>

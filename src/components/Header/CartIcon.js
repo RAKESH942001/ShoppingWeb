@@ -16,7 +16,10 @@ const CartIcon = (context) => {
 		>
 			<FavoriteBorderIcon fontSize="large"/>
 			<Badge badgeContent={ carts.length } color="primary">
-				<ShoppingCartIcon fontSize="large" color="action"/>
+				<ShoppingCartIcon
+					fontSize="large"
+					color="action"
+				/>
 			</Badge>
 		</Box>);
 };
