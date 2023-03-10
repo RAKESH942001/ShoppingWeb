@@ -7,6 +7,8 @@ const seed = {
 	products: cartManager.getId(config),
 	carts: [],
 	favouriteProducts: [],
+	adImage: '/Image/banner-1.jpg',
+
 };
 
 export default seed;

@@ -1,6 +1,5 @@
 /* eslint-disable no-magic-numbers */
 import { rndString, rndValue } from '@laufire/utils/random';
-import { React } from 'react';
 
 const filters = {
 	porridges: ({ state: { products }}) =>
@@ -62,21 +61,14 @@ const reduceCount = (context) => {
 		: cart));
 };
 
-const getImage = ({ path }) => {
-	<img
-		src={ path }
-		alt="fs"
-		width="200px"
-		height="150px"
-	/>;
-};
-
 const getProductAd = (context) => {
-	const { config: { productAd }} = context;
+	const { config: { productAd }, state, setState } = context;
 
-	setInterval(() => {
-		getImage({ ...{ ...context, path: rndValue(productAd) }});
-	}, 1000);
+	return (
+		setInterval(() => setState(() => ({
+			...state,
+			adImage: rndValue(productAd),
+		})), 6000));
 };
 
 const addProduct = (context) => {
