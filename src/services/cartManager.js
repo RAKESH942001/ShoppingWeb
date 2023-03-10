@@ -1,4 +1,5 @@
-import { rndString } from '@laufire/utils/random';
+/* eslint-disable no-magic-numbers */
+import { rndString, rndValue } from '@laufire/utils/random';
 
 const filters = {
 	porridges: ({ state: { products }}) =>
@@ -59,6 +60,13 @@ const reduceCount = (context) => {
 		? { ...cart, count: data.count - 1 }
 		: cart));
 };
+const getProductAd = (context) => {
+	const { config: { productAd }} = context;
+
+	setInterval(() => {
+		rndValue(productAd);
+	}, 1000);
+};
 
 const addProduct = (context) => {
 	const { data, state: { carts }} = context;
@@ -71,6 +79,7 @@ const addProduct = (context) => {
 };
 
 const cartManager = {
+	getProductAd,
 	removeProduct,
 	getFilter,
 	addProduct,

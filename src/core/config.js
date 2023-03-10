@@ -4,6 +4,9 @@ const config = {
 	newMoms: ['pregnancy', 'lactation'],
 	adults: ['healthMix', 'diabeticFriendly'],
 	idLength: 5,
+	productAd: ['/Image/banner-3.jpg',
+		'/Image/banner-1.jpg',
+		'/Image/banner.jpg'],
 	productsList: [
 		{
 			type: 'kids',

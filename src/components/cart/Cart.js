@@ -25,7 +25,6 @@ const Cart = (context) =>
 				</TableHead>
 				<CartTableBody { ...context }/>
 			</Table>
-
 		</TableContainer>
 		<CartTotal { ...context }/>
 	</Box>;
