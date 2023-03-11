@@ -1,5 +1,5 @@
 const config = {
-	tabLabel: ['product', 'filter', 'cart'],
+	tabLabel: ['product', 'filter', 'cart', 'favourite'],
 	kids: ['porridges', 'pancakeMix'],
 	newMoms: ['pregnancy', 'lactation'],
 	adults: ['healthMix', 'diabeticFriendly'],

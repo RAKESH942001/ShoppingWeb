@@ -3,6 +3,7 @@ import { React } from 'react';
 import Filter from '../Filter';
 import CartIcon from './CartIcon';
 import Display from './Display';
+import FavouriteIcon from './FavouriteIcon';
 import TextInput from './TextInput';
 
 const Header = (context) =>
@@ -10,6 +11,7 @@ const Header = (context) =>
 		<Filter { ...context }/>
 		<TextInput { ...context }/>
 		<CartIcon { ...context }/>
+		<FavouriteIcon { ...context }/>
 		{context.state.category && <Display { ...context }/>}
 	</div>;
 

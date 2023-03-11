@@ -89,7 +89,14 @@ const addProduct = (context) => {
 		: [...carts, data];
 };
 
+const getFavouriteProducts = (context) => {
+	const { state: { products }} = context;
+
+	return products.filter((product) => product.isFavourite === true);
+};
+
 const cartManager = {
+	getFavouriteProducts,
 	getProductAd,
 	removeProduct,
 	getFilter,

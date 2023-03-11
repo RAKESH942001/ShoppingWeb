@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { AddShoppingCartSharp } from '@mui/icons-material';
 import { Box, Button } from '@mui/material';
 import React from 'react';
@@ -15,7 +14,7 @@ const AddProducts = (context) => {
 						...state,
 						carts: carts.length === 0
 							? [...carts, data]
-							: peek(cartManager.addProduct(context)),
+							: cartManager.addProduct(context),
 						tabs: 'cart',
 					})) }
 			><AddShoppingCartSharp/>

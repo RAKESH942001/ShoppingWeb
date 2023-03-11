@@ -1,6 +1,5 @@
 import { React } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Badge from '@mui/material/Badge';
 
 import { Box } from '@mui/material';
@@ -14,7 +13,6 @@ const CartIcon = (context) => {
 			tabs: 'cart',
 		}) }
 		>
-			<FavoriteBorderIcon fontSize="large"/>
 			<Badge badgeContent={ carts.length } color="primary">
 				<ShoppingCartIcon
 					fontSize="large"

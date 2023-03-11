@@ -6,6 +6,7 @@ const seed = {
 	tabs: 'product',
 	products: cartManager.getId(config),
 	carts: [],
+	favouriteProducts: [],
 };
 
 export default seed;
