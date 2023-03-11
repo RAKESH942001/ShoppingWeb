@@ -1,4 +1,5 @@
 /* eslint-disable no-magic-numbers */
+import { peek } from '@laufire/utils/debug';
 import { rndString, rndValue } from '@laufire/utils/random';
 
 const filters = {
@@ -64,11 +65,12 @@ const reduceCount = (context) => {
 const getProductAd = (context) => {
 	const { config: { productAd }, state, setState } = context;
 
+	peek(state);
 	return (
-		setInterval(() => setState(() => ({
-			...state,
+		setInterval(() => setState((prevState) => ({
+			...prevState,
 			adImage: rndValue(productAd),
-		})), 6000));
+		})), 20000));
 };
 
 const addProduct = (context) => {
