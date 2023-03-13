@@ -3,6 +3,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Badge from '@mui/material/Badge';
 
 import { Box } from '@mui/material';
+import cartManager from '../../services/cartManager';
 
 const CartIcon = (context) => {
 	const { state: { carts }, setState, state } = context;
@@ -19,6 +20,7 @@ const CartIcon = (context) => {
 					color="action"
 				/>
 			</Badge>
+			$-{cartManager.getCartTotal(context)}
 		</Box>);
 };
 
