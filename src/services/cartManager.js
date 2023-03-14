@@ -70,7 +70,7 @@ const getProductAd = (context) => {
 		setInterval(() => setState((prevState) => ({
 			...prevState,
 			adImage: rndValue(productAd),
-		})), 20000));
+		})), 5000));
 };
 
 const addProduct = (context) => {

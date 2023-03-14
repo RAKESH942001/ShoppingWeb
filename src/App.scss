@@ -19,6 +19,7 @@
 }
 .productDetails {
 	flex-basis: 309px;
+	margin-bottom: 50px;
 	border: 2px solid;
 	height: 245px;
 	width: 220px;
@@ -32,6 +33,7 @@
 .screen {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 200px;
 	justify-content: space-between;
 }
 
