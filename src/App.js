@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { React, useState } from 'react';
 import './App.scss';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header';
 import Tabs from './components/tabs';
 import cartManager from './services/cartManager';
@@ -15,6 +16,7 @@ const App = (context) => {
 		<Box	className="App">
 			<Header { ...extendedContext }/>
 			<Tabs { ...extendedContext }/>
+			<Footer{ ...extendedContext }/>
 		</Box>);
 };
 

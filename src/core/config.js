@@ -1,5 +1,11 @@
 const config = {
-	tabLabel: ['product', 'cart', 'categoryWise', 'AboutUs', 'favourite'],
+	tabLabel: ['product',
+		'cart',
+		'categoryWise',
+		'AboutUs',
+		'Faq',
+		'favourite'],
+	brandLogo: './brand/brandLogo.png',
 	kids: ['porridges', 'pancakeMix'],
 	newMoms: ['pregnancy', 'lactation'],
 	adults: ['healthMix', 'diabeticFriendly'],
