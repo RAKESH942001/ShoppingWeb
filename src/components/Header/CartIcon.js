@@ -9,10 +9,12 @@ const CartIcon = (context) => {
 	const { state: { carts }, setState, state } = context;
 
 	return (
-		<Box onClick={ () => setState({
-			...state,
-			tabs: 'cart',
-		}) }
+		<Box
+			className="cartIcon"
+			onClick={ () => setState({
+				...state,
+				tabs: 'cart',
+			}) }
 		>
 			<Badge badgeContent={ carts.length } color="primary">
 				<ShoppingCartIcon

@@ -4,7 +4,7 @@ import Kids from './Kids';
 import NewMoms from './NewMoms';
 
 const Filter = (context) =>
-	<div className="menu">
+	<div className="filter">
 		<Kids { ...context }/>
 		<NewMoms { ...context }/>
 		<Adults { ...context }/>

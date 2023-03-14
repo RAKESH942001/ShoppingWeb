@@ -5,7 +5,7 @@ const config = {
 		'AboutUs',
 		'Faq',
 		'favourite'],
-	brandLogo: './brand/brandLogo.png',
+	brandLogo: './brand/logo.png',
 	kids: ['porridges', 'pancakeMix'],
 	newMoms: ['pregnancy', 'lactation'],
 	adults: ['healthMix', 'diabeticFriendly'],

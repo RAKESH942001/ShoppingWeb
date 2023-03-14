@@ -1,11 +1,14 @@
+import { Box } from '@mui/material';
 import { React } from 'react';
 
 const AdImage = ({ state: { adImage }}) =>
-	<img
-		src={ adImage }
-		alt="fs"
-		width="2500px"
-		height="500px"
-	/>;
+	<Box className="ad">
+		<img
+			src={ adImage }
+			alt="fs"
+			width="1903px"
+			height="500px"
+		/>
+	</Box>;
 
 export default AdImage;

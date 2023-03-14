@@ -14,6 +14,10 @@
 	border: 5px solid ;
 }
 
+.cartIcon {
+	position: relative;
+	left: -157px;
+}
 .quantity {
 	padding: right 72px ;
 }
@@ -38,10 +42,33 @@
 }
 
 .menu {
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
    row-gap: 100px;
 	background-color:lightsalmon;
+}
+
+.ad{
+	position: relative;
+	top: -90px;
+}
+
+.favouriteIcon {
+	position: relative;
+	left:13px;
+}
+.faq{
+position: relative;
+flex-basis: 10px;
+top:750px;
+left :105px;
+height: 10px;
+}
+.filter{
+	margin-left: 200px;
+	display: flex;
 }
 
 .container {
@@ -49,10 +76,17 @@
 	justify-content: flex-end;
 	top: 300px;
 }
+
 .checkBox {
 	position: relative;
 	top:-100%;
 	left:-43%;
+}
+
+.headerBrandLogo {
+	position: relative;
+	top: 98px;
+	left: 50px;
 }
 .filterContainer{
 	display:flex;
@@ -63,22 +97,17 @@
 	width: 800px;
 }
 .aboutUs{
-	top:750px;
-	left :105px;
 	height:500px;
+	border:2px solid;
 	width: 1300PX;
-	border:3px solid;
+	margin-left: 250px;
+	background-color: rgb(255, 124, 64);
 }
-.faq{
-	top:750px;
-	left :105px;
-	height:500px;
-	width: 1300PX;
-	border:3px solid;
-}
+
 .footer{
-	top:800px;
-	left :10px;
+	position: relative;
+	top:126px;
+	margin-bottom: 10px;
 	height:300px;
 	width: 100vw;
 	border:3px solid;

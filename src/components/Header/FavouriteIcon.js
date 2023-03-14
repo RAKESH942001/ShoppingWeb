@@ -7,11 +7,13 @@ const FavouriteIcon = (context) => {
 	const { state, setState, state: { favouriteProducts }} = context;
 
 	return (
-		<Box onClick={ () => setState({
-			...state,
-			tabs: 'favourite',
-			favouriteProducts: cartManager.getFavouriteProducts(context),
-		}) }
+		<Box
+			className="favouriteIcon"
+			onClick={ () => setState({
+				...state,
+				tabs: 'favourite',
+				favouriteProducts: cartManager.getFavouriteProducts(context),
+			}) }
 		>
 			<Badge badgeContent={ favouriteProducts.length } color="primary">
 				<FavoriteBorderIcon fontSize="large"/>
