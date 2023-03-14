@@ -1,24 +1,44 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+/* eslint-disable max-lines-per-function */
+import { React } from 'react';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Faqs = () =>
-	<Box className="faq">
-		<FormControl variant="standard" sx={ { width: 350 } }>
-			<InputLabel>Can u recommend foods to start solids for my baby?
-			</InputLabel>
-			<Select>
-				<MenuItem value="yes">yes we recommend</MenuItem>
-			</Select>
-			<InputLabel>start solids for my baby?
-			</InputLabel>
-			<Select>
-				<MenuItem value="we">we recommend</MenuItem>
-			</Select>
-		</FormControl>
-	</Box>;
+	<div>
+		<Accordion>
+			<AccordionSummary
+				expandIcon={ <ExpandMoreIcon/> }
+			>
+				can u recommend foods to start solid for Baby?
+			</AccordionSummary>
+			<AccordionDetails>
+				start with stage 1 foods i.e single Ingredients.
+			</AccordionDetails>
+		</Accordion>
+		<Accordion>
+			<AccordionSummary
+				expandIcon={ <ExpandMoreIcon/> }
+			>
+				Are your products only for babies?
+			</AccordionSummary>
+			<AccordionDetails>
+				No,we have a wide range of products for all age groups
+			</AccordionDetails>
+		</Accordion>
+		<Accordion>
+			<AccordionSummary
+				expandIcon={ <ExpandMoreIcon/> }
+			>
+				Have u added any preservatives?
+			</AccordionSummary>
+			<AccordionDetails>
+				No our products are natural and preservative free .
+			</AccordionDetails>
+		</Accordion>
+	</div>
+  ;
 
 export default Faqs;
