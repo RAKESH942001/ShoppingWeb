@@ -9,6 +9,8 @@ import Display from '../Header/Display';
 import AboutUs from '../Footer/AboutUs';
 import Faqs from '../Faqs';
 
+// Todo1:Make TabPanel Duplicate and change into loop wise.
+
 const Tabs = (context) => {
 	const { setState, state: { tabs, category },
 		config: { tabLabel }} = context;

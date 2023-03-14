@@ -18,6 +18,9 @@ const filters = {
 			product.productType === 'diabeticFriendly'),
 
 };
+
+// Todo1:Change into SingleLine Function;
+
 const getCartTotal = ({ state: { carts }}) => {
 	const Total = carts.reduce((acc, cur) => acc + (cur.count * cur.price), 0);
 
@@ -76,6 +79,7 @@ const getProductAd = (context) => {
 const addProduct = (context) => {
 	const { data, state: { carts }} = context;
 
+	// Todo:Change  find into  contains.
 	return carts.find((cart) => cart.id === data.id)
 		? carts.map((cart) => (cart.id === data.id
 			? { ...cart, count: cart.count + 1 }

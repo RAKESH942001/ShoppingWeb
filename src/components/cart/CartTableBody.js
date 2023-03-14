@@ -6,6 +6,8 @@ import Quantity from './Quantity';
 import Remove from './Remove';
 import SubTotal from './SubTotal';
 
+// Todo1:Change the Table cell to singleLoop.
+
 const CartTableBody = (context) => {
 	const { state: { carts }} = context;
 

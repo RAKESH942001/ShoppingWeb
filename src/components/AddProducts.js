@@ -3,6 +3,9 @@ import { Box, Button } from '@mui/material';
 import React from 'react';
 import cartManager from '../services/cartManager';
 
+// Todo1 :Change AddProducts to Singular.
+// Todo2:move the line no 18 to service file.
+
 const AddProducts = (context) => {
 	const { setState, state: { carts }, data } = context;
 

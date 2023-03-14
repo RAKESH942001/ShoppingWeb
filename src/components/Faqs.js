@@ -1,10 +1,11 @@
 /* eslint-disable max-lines-per-function */
 import { React } from 'react';
-
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+// Todo1:Data should be in config.
 
 const Faqs = () =>
 	<div>

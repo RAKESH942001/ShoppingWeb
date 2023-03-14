@@ -3,6 +3,8 @@ import ProductDetails from '../products/ProductDetails';
 import cartManager from '../../services/cartManager';
 import { Box } from '@mui/material';
 
+// Todo1:Change <h1> into material ui h1.
+
 const Display = (context) => {
 	const { state: { category }} = context;
 	const filteredProducts = cartManager.getFilter(context);

@@ -9,6 +9,8 @@ import CartTableBody from './CartTableBody';
 import CartTotal from './CartTotal';
 import { Box } from '@mui/material';
 
+// Todo1:Change the Table header into SIngle Loop.
+
 const Cart = (context) =>
 	<Box>
 		<TableContainer component={ Paper }>

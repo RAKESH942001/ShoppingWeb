@@ -3,6 +3,8 @@ import BrandLogo from '../BrandLogo';
 import About from '../Header/About';
 import FaqButton from '../Header/FaqButton';
 
+// Todo1:Use material Ui instead of div and span.
+
 const Footer = (context) =>
 	<div className="footer">
 		<div><BrandLogo { ...context }/></div>
