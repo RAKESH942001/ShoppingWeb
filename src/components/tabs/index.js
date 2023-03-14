@@ -7,6 +7,7 @@ import Cart from '../cart/Cart';
 import FavProductDisplay from '../Header/FavProductDisplay';
 import Display from '../Header/Display';
 import AboutUs from '../Footer/AboutUs';
+import Faqs from '../Faqs';
 
 const Tabs = (context) => {
 	const { setState, state: { tabs, category },
@@ -32,7 +33,7 @@ const Tabs = (context) => {
 			<TabPanel value="categoryWise">
 				{category && <Display { ...context }/>} </TabPanel>
 			<TabPanel value="AboutUs"><AboutUs { ...context }/> </TabPanel>
-
+			<TabPanel value="Faq"><Faqs { ...context }/> </TabPanel>
 		</TabContext>);
 };
 
