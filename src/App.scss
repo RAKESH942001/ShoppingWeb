@@ -37,7 +37,9 @@
 	top: -102%;
 	left: -43%;
 }
-
+.text{
+	border-radius:40px;
+}
 .screen {
 	display: flex;
 	flex-wrap: wrap;
@@ -61,7 +63,7 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 
 .favouriteIcon {
 	position: relative;
-	left:2px;
+	padding-right: 80px;
 }
 
 .faq {

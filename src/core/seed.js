@@ -8,6 +8,7 @@ const seed = {
 	carts: [],
 	favouriteProducts: [],
 	adImage: '/Image/banner-1.jpg',
+	isLogin: false,
 
 };
 

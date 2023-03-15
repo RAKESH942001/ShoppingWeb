@@ -11,10 +11,10 @@ const Faqs = () =>
 			<AccordionSummary
 				expandIcon={ <ExpandMoreIcon/> }
 			>
-				can u recommend foods to start solid for Baby?
+				Can u recommend foods to start solid for babies?
 			</AccordionSummary>
 			<AccordionDetails>
-				start with stage 1 foods i.e single Ingredients.
+				Start with stage 1 foods i.e single Ingredients.
 			</AccordionDetails>
 		</Accordion>
 		<Accordion>
