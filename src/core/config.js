@@ -1,18 +1,29 @@
 const config = {
+	brandLogoHeight: 100,
+
+	brandLogoWidth: 100,
+
 	tabLabel: ['product',
 		'cart',
 		'categoryWise',
 		'AboutUs',
 		'Faq',
 		'favourite'],
+
 	brandLogo: './brand/logo.png',
+
 	kids: ['porridges', 'pancakeMix'],
+
 	newMoms: ['pregnancy', 'lactation'],
+
 	adults: ['healthMix', 'diabeticFriendly'],
+
 	idLength: 5,
+
 	productAd: ['/Image/banner-3.jpg',
 		'/Image/banner-1.jpg',
 		'/Image/banner.jpg'],
+
 	productsList: [
 		{
 			type: 'kids',
