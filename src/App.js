@@ -6,8 +6,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header';
 import cartManager from './services/cartManager';
 
-// Todo1: header body footer are the three folders.
-
 const App = (context) => {
 	const { once, seed } = context;
 	const [state, setState] = useState(seed);
