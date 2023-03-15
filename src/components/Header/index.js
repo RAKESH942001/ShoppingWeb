@@ -1,7 +1,7 @@
 import { React } from 'react';
 import AdImage from './AdImage';
 import BrandLogo from './BrandLogo';
-import Filter from './Filter';
+import Categories from './Categories';
 import About from './About';
 import CartIcon from './CartIcon';
 import FaqButton from './FaqButton';
@@ -10,7 +10,7 @@ import FavouriteIcon from './FavouriteIcon';
 const Header = (context) =>
 	<div className="menu">
 		<BrandLogo { ...context }/>
-		<Filter { ...context }/>
+		<Categories { ...context }/>
 		<About { ...context }/>
 		<FaqButton { ...context }/>
 		<FavouriteIcon { ...context }/>
