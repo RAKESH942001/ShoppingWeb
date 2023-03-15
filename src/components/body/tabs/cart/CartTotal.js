@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import { React } from 'react';
-import cartManager from '../../services/cartManager';
-
+import cartManager from '../../../../services/cartManager';
 const CartTotal = (context) =>
 	<Box className="cartContainer">
 		<h1>Cart Total</h1>

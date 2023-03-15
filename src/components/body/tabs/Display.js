@@ -1,6 +1,6 @@
 import { React } from 'react';
-import ProductDetails from '../products/ProductDetails';
-import cartManager from '../../services/cartManager';
+import ProductDetails from './products/ProductDetails';
+import cartManager from '../../../services/cartManager';
 import { Box } from '@mui/material';
 
 // Todo1:Change <h1> into material ui h1.

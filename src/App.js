@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import { React, useState } from 'react';
 import './App.scss';
+import Tabs from './components/body/tabs';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header';
-import Tabs from './components/tabs';
 import cartManager from './services/cartManager';
 
 // Todo1: header body footer are the three folders.

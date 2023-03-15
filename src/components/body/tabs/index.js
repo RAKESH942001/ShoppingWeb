@@ -2,13 +2,12 @@
 import React from 'react';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Box, Tab } from '@mui/material';
-import Products from '../products/Products';
-import Cart from '../cart/Cart';
-import FavProductDisplay from '../Header/FavProductDisplay';
-import Display from '../Header/Display';
-import AboutUs from '../Footer/AboutUs';
-import Faqs from '../Faqs';
-
+import Cart from './cart/Cart';
+import Display from './Display';
+import FavProductDisplay from './FavProductDisplay';
+import AboutUs from '../../Footer/AboutUs';
+import Faqs from './Faqs';
+import Products from './products/Products';
 // Todo1:Make TabPanel Duplicate and change into loop wise.
 
 const Tabs = (context) => {

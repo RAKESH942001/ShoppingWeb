@@ -1,7 +1,7 @@
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 import { Checkbox } from '@mui/material';
 import React from 'react';
-import cartManager from '../../services/cartManager';
+import cartManager from '../../../../services/cartManager';
 
 const Favourite = (context) => {
 	const { setState, data } = context;

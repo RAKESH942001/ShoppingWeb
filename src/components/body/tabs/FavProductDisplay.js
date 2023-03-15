@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductDetails from '../products/ProductDetails';
+import ProductDetails from './products/ProductDetails';
 
 const FavProductDisplay = (context) => {
 	const { state: { favouriteProducts }} = context;

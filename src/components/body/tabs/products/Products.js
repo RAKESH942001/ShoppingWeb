@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import ProductDetails from '../products/ProductDetails';
-
+import ProductDetails from './ProductDetails';
 const Products = (context) => {
 	const { state: { products }} = context;
 

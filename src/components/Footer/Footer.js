@@ -1,5 +1,5 @@
 import { React } from 'react';
-import BrandLogo from '../BrandLogo';
+import BrandLogo from '../Header/BrandLogo';
 import About from '../Header/About';
 import FaqButton from '../Header/FaqButton';
 

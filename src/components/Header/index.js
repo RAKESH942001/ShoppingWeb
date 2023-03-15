@@ -1,7 +1,7 @@
 import { React } from 'react';
-import AdImage from '../AdImage';
-import BrandLogo from '../BrandLogo';
-import Filter from '../Filter';
+import AdImage from './AdImage';
+import BrandLogo from './BrandLogo';
+import Filter from './Filter';
 import About from './About';
 import CartIcon from './CartIcon';
 import FaqButton from './FaqButton';
