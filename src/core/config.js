@@ -12,6 +12,10 @@ const config = {
 
 	brandLogo: './brand/logo.png',
 
+	adImageHeight: 500,
+
+	adImageWidth: 1903,
+
 	categories: {
 		kids: ['porridges', 'pancakeMix'],
 
