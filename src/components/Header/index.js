@@ -2,6 +2,7 @@ import { React } from 'react';
 import AdImage from './AdImage';
 import BrandLogo from './BrandLogo';
 import Categories from './Categories';
+import Home from '../Home';
 import About from './About';
 import CartIcon from './CartIcon';
 import FaqButton from './FaqButton';
@@ -13,6 +14,7 @@ const Header = (context) =>
 		<Categories { ...context }/>
 		<About { ...context }/>
 		<FaqButton { ...context }/>
+		<Home { ...context }/>
 		<FavouriteIcon { ...context }/>
 		<CartIcon { ...context }/>
 		<AdImage { ...context }/>
