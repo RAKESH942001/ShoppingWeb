@@ -1,23 +1,16 @@
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { React } from 'react';
 
-// Todo1:Change to Box.
-// Todo2:Change into Single Line Function.
-
-const FaqButton = (context) => {
-	const { state, setState } = context;
-
-	return (
-		<div>
-			<Button
-				onClick={ () => setState({
-					...state,
-					tabs: 'Faqs',
-				}) }
-			>
-				FAQ
-			</Button>
-		</div>);
-};
+const FaqButton = ({ state, setState }) =>
+	<Box>
+		<Button
+			onClick={ () => setState({
+				...state,
+				tabs: 'Faqs',
+			}) }
+		>
+			FAQ
+		</Button>
+	</Box>;
 
 export default FaqButton;
