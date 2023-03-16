@@ -1,15 +1,21 @@
+import { map, values } from '@laufire/utils/collection';
+import { Box } from '@mui/material';
 import React from 'react';
-import Adults from './Adults';
-import Kids from './Kids';
-import NewMoms from './NewMoms';
-// Todo1:Change the name filter to Catagories.
-// Todo2:Create a single component by using config as object .
+import CategoriesType from './CategoriesType';
 
-const Categories = (context) =>
-	<div className="filter">
-		<Kids { ...context }/>
-		<NewMoms { ...context }/>
-		<Adults { ...context }/>
-	</div>;
+const Categories = (context) => {
+	const { config: { categories }} = context;
+
+	return (
+		values(map(categories, (
+			type, index, key
+		)	 =>
+			<Box
+				key={ key }
+				className="filter"
+			>
+				<CategoriesType { ...{ ...context, data: index } }/>
+			</Box>)));
+};
 
 export default Categories;

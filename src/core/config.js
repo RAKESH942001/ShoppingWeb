@@ -12,11 +12,14 @@ const config = {
 
 	brandLogo: './brand/logo.png',
 
-	kids: ['porridges', 'pancakeMix'],
+	categories: {
+		kids: ['porridges', 'pancakeMix'],
 
-	newMoms: ['pregnancy', 'lactation'],
+		newMoms: ['pregnancy', 'lactation'],
 
-	adults: ['healthMix', 'diabeticFriendly'],
+		adults: ['healthMix', 'diabeticFriendly'],
+	},
+	types: ['kids', 'newMoms', 'adults'],
 
 	idLength: 5,
 
