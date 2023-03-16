@@ -3,7 +3,6 @@ import React from 'react';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Box, Tab } from '@mui/material';
 import TabPanels from './TabPanels';
-// Todo1:Make TabPanel Duplicate and change into loop wise.
 
 const Tabs = (context) => {
 	const { setState, state: { tabs },

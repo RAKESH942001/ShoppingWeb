@@ -6,7 +6,7 @@ const About = ({ state, setState }) =>
 		<Button
 			onClick={ () => setState({
 				...state,
-				tabs: 'AboutUs',
+				tabs: 'aboutUs',
 			}) }
 		>
 			AboutUs

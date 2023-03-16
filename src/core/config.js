@@ -3,6 +3,8 @@ const config = {
 
 	brandLogoWidth: 100,
 
+	cartHeader: ['Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
+
 	tabLabel: ['product',
 		'cart',
 		'categoryWise',

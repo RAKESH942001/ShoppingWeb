@@ -6,7 +6,7 @@ const FaqButton = ({ state, setState }) =>
 		<Button
 			onClick={ () => setState({
 				...state,
-				tabs: 'Faqs',
+				tabs: 'faq',
 			}) }
 		>
 			FAQ
