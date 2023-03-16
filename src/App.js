@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { React, useState } from 'react';
+import { React } from 'react';
 import './App.scss';
 import Tabs from './components/body/tabs';
 import Footer from './components/Footer/Footer';
@@ -7,17 +7,15 @@ import Header from './components/Header';
 import cartManager from './services/cartManager';
 
 const App = (context) => {
-	const { once, seed } = context;
-	const [state, setState] = useState(seed);
-	const extendedContext = { ...{ ...context, state, setState }};
+	const { once } = context;
 
-	once(() => cartManager.getProductAd(extendedContext));
+	once(() => cartManager.getProductAd(context));
 
 	return (
 		<Box className="App">
-			<Header { ...extendedContext }/>
-			<Tabs { ...extendedContext }/>
-			<Footer { ...extendedContext }/>
+			<Header { ...context }/>
+			<Tabs { ...context }/>
+			<Footer { ...context }/>
 		</Box>);
 };
 
