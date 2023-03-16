@@ -6,8 +6,8 @@ const config = {
 	tabLabel: ['product',
 		'cart',
 		'categoryWise',
-		'AboutUs',
-		'Faq',
+		'aboutUs',
+		'faq',
 		'favourite'],
 
 	brandLogo: './brand/logo.png',

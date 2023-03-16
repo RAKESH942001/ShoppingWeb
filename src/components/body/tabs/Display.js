@@ -13,7 +13,7 @@ const Display = (context) => {
 		<Box style={ { paddingLeft: '400px' } }>
 			<h1>{category}</h1>
 			<Box className="filterContainer">
-				{filteredProducts.map((product, key) =>
+				{ category && filteredProducts.map((product, key) =>
 					<ProductDetails
 						key={ key }
 						{ ...{ ...context, data: product } }
