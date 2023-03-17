@@ -51,7 +51,7 @@
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	row-gap: 100px;
 background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
@@ -63,7 +63,7 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 
 .favouriteIcon {
 	position: relative;
-	padding-right: 80px;
+	padding-right: 20px;
 }
 
 .faq {
@@ -115,7 +115,9 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 	top: 500px;
 	text-align: left;
 }
-
+.home{
+	padding-right: 30px;
+}
 .footer {
 	display: flex;
 	flex-wrap: wrap;
