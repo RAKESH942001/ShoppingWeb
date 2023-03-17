@@ -12,7 +12,7 @@ const Favourite = (context) => {
 			color="secondary"
 			icon={ <FavoriteBorder/> }
 			checkedIcon={ <Favorite/> }
-			checked={ data.checked }
+			checked={ data.isFavourite }
 			onClick={ () => setState((state) => ({
 				...state,
 				products: cartManager.getToggleProduct(context),

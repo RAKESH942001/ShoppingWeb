@@ -2,7 +2,7 @@ import { React } from 'react';
 import AdImage from './AdImage';
 import BrandLogo from './BrandLogo';
 import Categories from './Categories';
-import Home from '../Home';
+import Home from './Home';
 import About from './About';
 import CartIcon from './CartIcon';
 import FaqButton from './FaqButton';

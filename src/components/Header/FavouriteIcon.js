@@ -4,7 +4,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import cartManager from '../../services/cartManager';
 
 const FavouriteIcon = (context) => {
-	const { state, setState, state: { favouriteProducts }} = context;
+	const { state, setState } = context;
 
 	return (
 		<Box
@@ -12,10 +12,14 @@ const FavouriteIcon = (context) => {
 			onClick={ () => setState({
 				...state,
 				tabs: 'favourite',
-				favouriteProducts: cartManager.getFavouriteProducts(context),
+
 			}) }
 		>
-			<Badge badgeContent={ favouriteProducts.length } color="primary">
+			<Badge
+				badgeContent={ cartManager.getFavouriteProducts(context)
+					.length }
+				color="primary"
+			>
 				<FavoriteBorderIcon fontSize="large"/>
 			</Badge>
 		</Box>);
