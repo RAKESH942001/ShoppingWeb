@@ -4,6 +4,7 @@ import { React } from 'react';
 const FaqButton = ({ state, setState }) =>
 	<Box>
 		<Button
+			color="inherit"
 			onClick={ () => setState({
 				...state,
 				tabs: 'faq',
