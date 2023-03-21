@@ -19,19 +19,14 @@ const filters = {
 
 };
 
-// Todo1:Change into SingleLine Function;
-
-const getCartTotal = ({ state: { carts }}) => {
-	const Total = carts.reduce((acc, cur) => acc + (cur.count * cur.price), 0);
-
-	return Total;
-};
+const getCartTotal = ({ state: { carts }}) =>
+	carts.reduce((acc, cur) => acc + (cur.count * cur.price), 0);
 
 const getToggleProduct = (context) => {
-	const { state: { products, isFavourite }, data } = context;
+	const { state: { products }, data } = context;
 
 	return products.map((product) => (product.id === data.id
-		? { ...product, isFavourite: !isFavourite }
+		? { ...product, isFavourite: !data.isFavourite }
 		: product));
 };
 

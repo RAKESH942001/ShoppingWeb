@@ -16,10 +16,7 @@
 	border: 3px solid;
 }
 
-.cartIcon {
-	position: relative;
-	left: -157px;
-}
+
 
 .quantity {
 	padding: right 72px;
@@ -84,6 +81,10 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 	top: 300px;
 }
 
+.icons {
+	display: flex;
+	align-items: baseline;
+}
 .checkBox {
 	position: relative;
 	top: -100%;
@@ -91,8 +92,9 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
 .header {
-
-	display: flex;
+	justify-content: space-around;
+	height: 80px;
+	background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
 .headerBrandLogo {
@@ -120,7 +122,6 @@ background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 	text-align: left;
 }
 .home{
-	padding-right: 30px;
 }
 .footer {
 	display: flex;
