@@ -18,6 +18,7 @@ specifiers:
   react-dom: ^17.0.2
   react-responsive-carousel: ^3.2.23
   react-scripts: 4.0.3
+  react-snap-carousel: ^0.3.1
   sass: ^1.54.5
   web-vitals: ^1.1.2
 
@@ -33,6 +34,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-responsive-carousel: 3.2.23
   react-scripts: 4.0.3_y5zi7tsrr5zhqd2q2i5ph5b3we
+  react-snap-carousel: 0.3.1_react@17.0.2
   web-vitals: 1.1.2
 
 devDependencies:
@@ -10355,6 +10357,14 @@ packages:
       - webpack-command
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /react-snap-carousel/0.3.1_react@17.0.2:
+    resolution: {integrity: sha512-vRrwBV4sC3IP5JQukqAVwELDgOrJ2fZ7WT1aZY7HVDiSTDGXAl6ykvn5BV++O4f+cQ2Vmad1Vp996ytz1QQ03w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /react-transition-group/4.4.5_sfoxds7t5ydpegc3knd667wn6m:

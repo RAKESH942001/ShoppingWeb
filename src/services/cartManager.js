@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 import { peek } from '@laufire/utils/debug';
-import { rndString, rndValue } from '@laufire/utils/random';
+import { rndString, rndValues } from '@laufire/utils/random';
 
 const filters = {
 	porridges: ({ state: { products }}) =>
@@ -67,7 +67,7 @@ const getProductAd = (context) => {
 	return (
 		setInterval(() => setState((prevState) => ({
 			...prevState,
-			adImage: rndValue(productAd),
+			adImage: rndValues(productAd),
 		})), 5000));
 };
 
