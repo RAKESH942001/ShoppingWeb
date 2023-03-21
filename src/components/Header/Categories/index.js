@@ -7,15 +7,15 @@ const Categories = (context) => {
 	const { config: { categories }} = context;
 
 	return (
-		values(map(categories, (
-			type, index, key
-		)	 =>
-			<Box
-				key={ key }
-				className="filter"
-			>
-				<CategoriesType { ...{ ...context, data: index } }/>
-			</Box>)));
+		<Box sx={ { display: 'flex' } }>
+			{values(map(categories, (
+				type,
+				index, key
+			)	 =>
+				<Box key={ key }>
+					<CategoriesType { ...{ ...context, data: index } }/>
+				</Box>))}
+		</Box>);
 };
 
 export default Categories;

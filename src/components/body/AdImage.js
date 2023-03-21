@@ -6,8 +6,7 @@ const AdImage = ({ state: { adImage, adImageHeight, adImageWidth }}) =>
 		<img
 			src={ adImage }
 			alt="fs"
-			width={ `${ adImageWidth }px` }
-			height={ `${ adImageHeight }px` }
+			width="1093px"
 		/>
 	</Box>;
 
