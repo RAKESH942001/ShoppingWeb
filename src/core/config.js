@@ -1,7 +1,7 @@
 const config = {
-	brandLogoHeight: 100,
+	brandLogoHeight: 60,
 
-	brandLogoWidth: 100,
+	brandLogoWidth: 60,
 
 	cartHeader: ['Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
 

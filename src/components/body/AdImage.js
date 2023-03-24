@@ -3,7 +3,11 @@ import { React } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 const AdImage = ({ config: { productAd }}) =>
-	<Carousel autoPlay={ true } showThumbs={ false }>
+	<Carousel
+		autoPlay={ true }
+		infiniteLoop={ true }
+		showThumbs={ false }
+	>
 		{productAd.map((product, key) =>
 			<Box key={ key } className="ad">
 				<img
