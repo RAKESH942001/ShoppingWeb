@@ -13,7 +13,7 @@ const Header = (context) =>
 				justifyContent: 'space-between' } }
 			>
 				<BrandLogo { ...context }/>
-				<Categories { ...context }/>/
+				<Categories { ...context }/>
 				<Icons { ...context }/>
 			</Toolbar>
 		</AppBar>

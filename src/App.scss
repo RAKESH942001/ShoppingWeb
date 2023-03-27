@@ -122,6 +122,7 @@
 	text-align: left;
 }
 
+
 .home {
 	padding-left: 80px;
 }
@@ -130,9 +131,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	top: 126px;
 	margin-bottom: 10px;
-	height: 200px;
+	height: max-content;
+	width:100%;
 	border: 1px solid;
 	background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }

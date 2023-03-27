@@ -9,6 +9,7 @@ const seed = {
 	favouriteProducts: [],
 	isLogin: false,
 	mobileOpen: false,
+	nestedCategory: false,
 };
 
 export default seed;
