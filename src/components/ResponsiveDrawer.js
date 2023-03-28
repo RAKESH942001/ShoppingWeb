@@ -7,6 +7,7 @@ import Tabs from './body/tabs';
 import Footer from './Footer/Footer';
 import MobileViewHeader from './MobileViewHeader';
 import MobileDrawer from './MobileDrawer';
+import AdImage from './body/AdImage';
 
 const ResponsiveDrawer = (context) =>
 	<Box sx={ { display: 'flex' } }>
@@ -15,6 +16,7 @@ const ResponsiveDrawer = (context) =>
 		<MobileDrawer { ...context }/>
 		<Box>
 			<Toolbar/>
+			<AdImage { ...context }/>
 			<Tabs { ...context }/>
 			<Footer { ...context }/>
 		</Box>
