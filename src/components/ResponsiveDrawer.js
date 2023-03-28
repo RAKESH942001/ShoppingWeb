@@ -13,15 +13,11 @@ const ResponsiveDrawer = (context) =>
 		<CssBaseline/>
 		<MobileViewHeader { ...context }/>
 		<MobileDrawer { ...context }/>
-		<Box
-			component="main"
-			sx={ { width: { sm: 'block' }} }
-		>
+		<Box>
 			<Toolbar/>
 			<Tabs { ...context }/>
 			<Footer { ...context }/>
 		</Box>
-	</Box>
-	;
+	</Box>;
 
 export default ResponsiveDrawer;

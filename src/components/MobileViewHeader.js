@@ -2,10 +2,8 @@
 import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
 import { React } from 'react';
 import Header from './Header';
-import BrandLogo from './Header/BrandLogo';
-import CartIcon from './Header/CartIcon';
-import FavouriteIcon from './Header/FavouriteIcon';
 import MenuIcon from '@mui/icons-material/Menu';
+import MobileViewIcons from './MobileViewIcons';
 
 const MobileViewHeader = (context) => {
 	const { state: { mobileOpen }, setState, state } = context;
@@ -24,9 +22,7 @@ const MobileViewHeader = (context) => {
 				>
 					<MenuIcon/>
 				</IconButton>
-				<BrandLogo { ...context }/>
-				<CartIcon { ...context }/>
-				<FavouriteIcon { ...context }/>
+				<MobileViewIcons { ...context }/>
 				<Box sx={ { mr: 2, display: { sm: 'block', xs: 'none' }} }>
 					<Header { ...context }/>
 				</Box>

@@ -8,7 +8,7 @@ import MobileViewTitles from './MobileViewTitles';
 const MobileDrawer = (context) => {
 	const { state: { mobileOpen }, setState, state } = context;
 
-	const drawerWidth = 240;
+	const drawerWidth = 400;
 	const handleDrawerToggle = () => setState({ ...state,
 		mobileOpen: !mobileOpen });
 
