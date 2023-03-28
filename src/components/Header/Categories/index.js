@@ -7,7 +7,7 @@ const Categories = (context) => {
 	const { config: { categories }} = context;
 
 	return (
-		<Box sx={ { display: 'flex' } }>
+		<Box sx={ { display: { sm: 'flex', xs: 'block' }} }>
 			{values(map(categories, (
 				type,
 				index, key
