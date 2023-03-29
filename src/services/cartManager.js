@@ -3,19 +3,19 @@ import { peek } from '@laufire/utils/debug';
 import { rndString, rndValues } from '@laufire/utils/random';
 
 const filters = {
-	porridges: ({ state: { products }}) =>
-		products.filter((product) => product.productType === 'porridges'),
-	pancakeMix: ({ state: { products }}) =>
-		products.filter((product) => product.productType === 'pancakeMix'),
-	pregnancy: ({ state: { products }}) =>
-		products.filter((product) => product.productType === 'pregnancy'),
-	lactation: ({ state: { products }}) =>
-		products.filter((product) => product.productType === 'lactation'),
-	healthMix: ({ state: { products }}) =>
-		products.filter((product) => product.productType === 'healthMix'),
-	diabeticFriendly: ({ state: { products }}) =>
+	Porridges: ({ state: { products }}) =>
+		products.filter((product) => product.productType === 'Porridges'),
+	PanCakeMix: ({ state: { products }}) =>
+		products.filter((product) => product.productType === 'PanCakeMix'),
+	Pregnancy: ({ state: { products }}) =>
+		products.filter((product) => product.productType === 'Pregnancy'),
+	Lactation: ({ state: { products }}) =>
+		products.filter((product) => product.productType === 'Lactation'),
+	HealthMix: ({ state: { products }}) =>
+		products.filter((product) => product.productType === 'HealthMix'),
+	DiabeticFriendly: ({ state: { products }}) =>
 		products.filter((product) =>
-			product.productType === 'diabeticFriendly'),
+			product.productType === 'DiabeticFriendly'),
 
 };
 

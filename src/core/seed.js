@@ -8,7 +8,6 @@ const seed = {
 	carts: [],
 	isLogin: false,
 	mobileOpen: false,
-	nestedCategory: false,
 };
 
 export default seed;

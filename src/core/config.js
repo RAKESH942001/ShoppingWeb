@@ -1,7 +1,7 @@
 const config = {
-	brandLogoHeight: 60,
+	brandLogoHeight: 100,
 
-	brandLogoWidth: 60,
+	brandLogoWidth: 100,
 
 	cartHeader: ['Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
 
@@ -15,11 +15,11 @@ const config = {
 	brandLogo: './brand/logo.png',
 
 	categories: {
-		kids: ['porridges', 'pancakeMix'],
+		kids: ['Porridges', 'PanCakeMix'],
 
-		newMoms: ['pregnancy', 'lactation'],
+		newMoms: ['Pregnancy', 'Lactation'],
 
-		adults: ['healthMix', 'diabeticFriendly'],
+		adults: ['HealthMix', 'DiabeticFriendly'],
 	},
 	types: ['kids', 'newMoms', 'adults'],
 
@@ -32,84 +32,84 @@ const config = {
 	productsList: [
 		{
 			type: 'kids',
-			productType: 'porridges',
+			productType: 'Porridges',
 			productName: 'Sprouted Ragi Almond',
 			img: '/img/SpoutedRagiAlmondMix.jpg',
 			price: 230,
 		},
 		{
 			type: 'kids',
-			productType: 'porridges',
+			productType: 'Porridges',
 			productName: 'Trillet Cereal',
 			img: '/img/TrilletCereal.jpg',
 			price: 300,
 		},
 		{
 			type: 'kids',
-			productType: 'pancakeMix',
+			productType: 'PanCakeMix',
 			productName: 'Magic Millet Pancake Mix',
 			img: '/img/MagicMilletPanCake.jpg',
 			price: 450,
 		},
 		{
 			type: 'kids',
-			productType: 'pancakeMix',
+			productType: 'PanCakeMix',
 			productName: 'Cocoa Millet Pancake Mix',
 			img: '/img/CocoMilletPanCake.jpg',
 			price: 280,
 		},
 		{
 			type: 'newMoms',
-			productType: 'pregnancy',
+			productType: 'Pregnancy',
 			productName: 'Black Urad Dal',
 			img: '/img/BlackUralDal.jpg',
 			price: 350,
 		},
 		{
 			type: 'newMoms',
-			productType: 'pregnancy',
+			productType: 'Pregnancy',
 			productName: 'New Moms Buddy',
 			img: '/img/NewMomsBuddy.jpg',
 			price: 450,
 		},
 		{
 			type: 'newMoms',
-			productType: 'lactation',
+			productType: 'Lactation',
 			productName: 'Almond Instant Milk',
 			img: '/img/AlmondInstantMilk.jpg',
 			price: 400,
 		},
 		{
 			type: 'newMoms',
-			productType: 'lactation',
+			productType: 'Lactation',
 			productName: '37 Ingredient Health Mix',
 			img: '/img/37IncridentsInstantMix.jpg',
 			price: 1000,
 		},
 		{
 			type: 'adults',
-			productType: 'healthMix',
+			productType: 'HealthMix',
 			productName: 'Sprouted Ragi Moong DalMix',
 			img: '/img/SpoutedRagiMoogDal.jpg',
 			price: 300,
 		},
 		{
 			type: 'adults',
-			productType: 'healthMix',
+			productType: 'HealthMix',
 			productName: 'Banana Sprouted Ragi Mix',
 			img: '/img/BananaSproutedRaggiMix.jpg',
 			price: 350,
 		},
 		{
 			type: 'adults',
-			productType: 'diabeticFriendly',
+			productType: 'DiabeticFriendly',
 			productName: 'Sprouted Ragi Almond Mix(adults)',
 			img: '/img/SpoutedRagiAlmondMix.jpg',
 			price: 500,
 		},
 		{
 			type: 'adults',
-			productType: 'diabeticFriendly',
+			productType: 'DiabeticFriendly',
 			productName: '37 Ingredients Mix(adults)',
 			img: '/img/37IncridentsInstantMix.jpg',
 			price: 1000,
