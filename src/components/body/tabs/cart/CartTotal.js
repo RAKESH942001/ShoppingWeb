@@ -3,8 +3,7 @@ import { React } from 'react';
 import cartManager from '../../../../services/cartManager';
 const CartTotal = (context) =>
 	<Box className="cartContainer">
-		<h1>Cart Total</h1>
-		<h2>Total:  {cartManager.getCartTotal(context)}</h2>
+		<h1>Cart Total Amount :{cartManager.getCartTotal(context)} </h1>
 	</Box>;
 
 export default CartTotal;
