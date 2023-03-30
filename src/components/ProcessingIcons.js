@@ -6,6 +6,7 @@ import FavouriteIcon from './Header/FavouriteIcon';
 const ProcessingIcons = (context) =>
 	<Box sx={ {
 		display: 'flex',
+		marginTop: '30px',
 		paddingLeft: '350px',
 	} }
 	>

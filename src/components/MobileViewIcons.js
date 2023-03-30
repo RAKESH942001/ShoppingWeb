@@ -6,7 +6,8 @@ import ProcessingIcons from './ProcessingIcons';
 const MobileViewIcons = (context) =>
 	<Box sx={ {
 		display: 'flex',
-		paddingLeft: '70px',
+		justifyContent: 'center',
+		paddingLeft: '20px',
 	} }
 	>
 		<BrandLogo { ...context }/>

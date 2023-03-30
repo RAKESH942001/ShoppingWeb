@@ -8,7 +8,7 @@ import MobileViewTitles from './MobileViewTitles';
 const MobileDrawer = (context) => {
 	const { state: { mobileOpen }, setState, state } = context;
 
-	const drawerWidth = 400;
+	const drawerWidth = 500;
 	const handleDrawerToggle = () => setState({ ...state,
 		mobileOpen: !mobileOpen });
 
@@ -35,7 +35,8 @@ const MobileDrawer = (context) => {
 			sx={ {
 				'display': { xs: 'block', sm: 'none' },
 				'& .MuiDrawer-paper': { boxSizing: 'border-box',
-					width: drawerWidth },
+					width: drawerWidth, height: '90%',
+					border: '5px double' },
 			} }
 		>
 			{MobileDrawerElements}
