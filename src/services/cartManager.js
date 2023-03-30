@@ -33,7 +33,9 @@ const getToggleProduct = (context) => {
 const getFilter = (context) => {
 	const { state: { category }} = context;
 
-	return filters[category](context);
+	return filters[category] === undefined
+		? []
+		: filters[category](context);
 };
 const removeProduct = ({ state: { carts }, data: cart }) =>
 	carts.filter((product) => product.id !== cart.id);

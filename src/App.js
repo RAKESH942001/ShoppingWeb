@@ -13,7 +13,6 @@ const App = (context) => {
 	return (
 		<Box className="App">
 			<ResponsiveDrawer { ...context }/>
-
 		</Box>);
 };
 
