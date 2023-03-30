@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import { Box } from '@mui/material';
 import { React } from 'react';
 import { Carousel } from 'react-responsive-carousel';
