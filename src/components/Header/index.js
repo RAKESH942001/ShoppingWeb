@@ -10,7 +10,7 @@ const Header = (context) =>
 	<Box>
 		<AppBar className="header">
 			<Toolbar sx={ { display: 'flex',
-				justifyContent: 'space-between' } }
+				justifyContent: 'space-around' } }
 			>
 				<BrandLogo { ...context }/>
 				<Categories { ...context }/>
