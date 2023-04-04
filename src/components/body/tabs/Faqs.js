@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines-per-function */
 import { React } from 'react';
 import Accordion from '@mui/material/Accordion';
@@ -11,30 +12,30 @@ const Faqs = () =>
 			<AccordionSummary
 				expandIcon={ <ExpandMoreIcon/> }
 			>
-				Can u recommend foods to start solid for babies?
+				Q. Can u recommend foods to start solids for my baby?
 			</AccordionSummary>
 			<AccordionDetails>
-				Start with stage 1 foods i.e single Ingredients.
+				A: Start with stage 1 foods i.e, single ingredient foods  listed in our website.
 			</AccordionDetails>
 		</Accordion>
 		<Accordion>
 			<AccordionSummary
 				expandIcon={ <ExpandMoreIcon/> }
 			>
-				Are your products only for babies?
+				Q. Are your products only for babies?
 			</AccordionSummary>
 			<AccordionDetails>
-				No,we have a wide range of products for all age groups
+				A: No. We have wide range of products from 6+ months to all age groups.
 			</AccordionDetails>
 		</Accordion>
 		<Accordion>
 			<AccordionSummary
 				expandIcon={ <ExpandMoreIcon/> }
 			>
-				Have u added any preservatives?
+				Q.	Have u added any preservatives?
 			</AccordionSummary>
 			<AccordionDetails>
-				No our products are natural and preservative free .
+				A: A big No. Our products are 100% natural and authentic.
 			</AccordionDetails>
 		</Accordion>
 	</div>
