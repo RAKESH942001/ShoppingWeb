@@ -7,12 +7,14 @@ import ProductName from './ProductName';
 import ProductPrice from './ProductPrice';
 
 const ProductDetails = (context) =>
-	<Box className="productDetails">
-		<ProductImages { ...context }/>
-		<ProductName { ...context }/>
-		<ProductPrice { ...context }/>
-		<Favourite { ...context }/>
-		<AddProducts { ...context }/>
+	<Box sx={ { marginBottom: '70px' } }>
+		<Box className="productDetails">
+			<ProductImages { ...context }/>
+			<ProductName { ...context }/>
+			<ProductPrice { ...context }/>
+			<Favourite { ...context }/>
+			<AddProducts { ...context }/>
+		</Box>
 	</Box>;
 
 export default ProductDetails;

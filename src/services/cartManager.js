@@ -3,6 +3,8 @@ import { peek } from '@laufire/utils/debug';
 import { rndString, rndValues } from '@laufire/utils/random';
 
 const filters = {
+	All: ({ state: { products }}) =>
+		products.filter((product) => product),
 	Porridges: ({ state: { products }}) =>
 		products.filter((product) => product.productType === 'Porridges'),
 	PanCakeMix: ({ state: { products }}) =>
