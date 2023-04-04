@@ -10,7 +10,9 @@ const Tabs = (context) => {
 
 	return (
 		<TabContext value={ tabs }>
-			<Box sx={ { borderBottom: 1, borderColor: 'divider' } }>
+			<Box sx={ { borderBottom: 1,
+				borderColor: 'divider' } }
+			>
 				<TabList
 					onChange={ (event, value) => setState((state) => ({
 						...state,
@@ -21,13 +23,15 @@ const Tabs = (context) => {
 						<Tab key={ key } label={ data } value={ data }/>)}
 				</TabList>
 			</Box>
-			{tabLabel.map((data, key) => {
-				const Components = TabPanels[data];
+			<Box>
+				{tabLabel.map((data, key) => {
+					const Components = TabPanels[data];
 
-				return <TabPanel key={ key } value={ data }>
-					<Components { ...context }/>
-				</TabPanel>;
-			})}
+					return <TabPanel key={ key } value={ data }>
+						<Components { ...context }/>
+					</TabPanel>;
+				})}
+			</Box>
 		</TabContext>);
 };
 

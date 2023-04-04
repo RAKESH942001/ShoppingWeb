@@ -9,12 +9,12 @@ const Display = (context) => {
 	const filteredProducts = cartManager.getFilter(context);
 
 	return (
-		<Box
-			className="filterContainer"
-			sx={ { display: { sm: 'block', xs: 'block' }} }
-		>
-			<Typography variant="h2">{category}</Typography>
-			<Box>
+		<Box>
+			<Typography variant="h4">{category}</Typography>
+			<Box
+				className="filterContainer"
+				sx={ { display: { sm: 'flex', xs: 'block' }, gap: '50px' } }
+			>
 				{ filteredProducts.length === 0
 					? <ProductNotFound { ...context }/>
 					: filteredProducts.map((product, key) =>
