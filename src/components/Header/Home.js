@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 const Home = ({ state, setState }) =>
 	<Box className="home">
 		<Button onClick={ () => setState({ ...state,
+			category: 'All',
 			tabs: 'product'		}) }
 		>
 			<HomeIcon fontSize="large"/>
