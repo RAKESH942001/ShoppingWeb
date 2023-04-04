@@ -3,7 +3,7 @@ const config = {
 
 	brandLogoWidth: 100,
 
-	cartHeader: ['Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
+	cartHeader: ['Remove', 'Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
 
 	drawerWidth: 500,
 

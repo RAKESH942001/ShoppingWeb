@@ -7,7 +7,7 @@ import ProductName from './ProductName';
 import ProductPrice from './ProductPrice';
 
 const ProductDetails = (context) =>
-	<Box sx={ { marginBottom: '70px' } }>
+	<Box sx={ { marginBottom: '80px' } }>
 		<Box className="productDetails">
 			<ProductImages { ...context }/>
 			<ProductName { ...context }/>

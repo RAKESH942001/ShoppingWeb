@@ -24,11 +24,11 @@ const CartTableBody = (context) => {
 						<ProductImages { ...{ ...context, data: cart } }/>
 					</TableCell>
 					<TableCell>{cart.productName}</TableCell>
-					<TableCell align="right">{cart.price}</TableCell>
-					<TableCell align="right">
+					<TableCell>{cart.price}</TableCell>
+					<TableCell>
 						<Quantity { ...{ ...context, data: cart } }/>
 					</TableCell>
-					<TableCell align="right">
+					<TableCell>
 						<SubTotal { ...{ ...context, data: cart } }/>
 					</TableCell>
 				</TableRow>)}
