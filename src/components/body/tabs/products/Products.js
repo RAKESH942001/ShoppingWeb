@@ -10,10 +10,8 @@ const Products = (context) => {
 	const filteredProducts = cartManager.getFilter(context);
 
 	return (
-		<Box sx={ { flexGrow: 1 } }>
+		<Box>
 			<Grid
-				justifyContent="center"
-				alignItems="center"
 				container={ true }
 				spacing={ { xs: 2, md: 3 } }
 				columns={ { xs: 1, sm: 8, md: 12 } }
