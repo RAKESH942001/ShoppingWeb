@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import { React } from 'react';
 import { Divider, List, Toolbar } from '@mui/material';
 import Categories from './Header/Categories';
