@@ -5,6 +5,8 @@ const config = {
 
 	cartHeader: ['Product', 'Name', 'Price', 'Quantity', 'SubTotal'],
 
+	drawerWidth: 500,
+
 	tabLabel: ['product',
 		'cart',
 		'categoryWise',

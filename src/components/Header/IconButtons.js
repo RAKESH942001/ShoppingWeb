@@ -15,7 +15,6 @@ const IconButtons = (context) => {
 			onClick={ handleDrawerToggle }
 			sx={ { mr: 2, display: { sm: 'none' }} }
 		>
-
 			<MenuIcon/>
 		</IconButton>);
 };
