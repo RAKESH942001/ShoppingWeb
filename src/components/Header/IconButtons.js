@@ -2,7 +2,7 @@ import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 
-const IconButtons = (context) => {
+const Menu = (context) => {
 	const { state: { mobileOpen }, setState, state } = context;
 	const handleDrawerToggle = () => setState({ ...state,
 		mobileOpen: !mobileOpen });
@@ -19,4 +19,4 @@ const IconButtons = (context) => {
 		</IconButton>);
 };
 
-export default IconButtons;
+export default Menu;
