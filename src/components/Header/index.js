@@ -1,22 +1,16 @@
-import { React } from 'react';
-import BrandLogo from './BrandLogo';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Categories from './Categories';
-import WebIcons from './WebIcons';
+import { AppBar, Box, Toolbar } from '@mui/material';
+import React from 'react';
+import MobileHeader from './MobileHeader';
+import WebHeader from './WebHeader';
 
 const Header = (context) =>
-	<Box>
-		<AppBar className="header">
-			<Toolbar sx={ { display: 'flex',
-				justifyContent: 'space-around' } }
-			>
-				<BrandLogo { ...context }/>
-				<Categories { ...context }/>
-				<WebIcons { ...context }/>
-			</Toolbar>
-		</AppBar>
-	</Box>;
+	<AppBar className="header">
+		<Toolbar>
+			<MobileHeader { ...context }/>
+			<Box sx={ { mr: 2, display: { sm: 'block', xs: 'none' }} }>
+				<WebHeader { ...context }/>
+			</Box>
+		</Toolbar>
+	</AppBar>;
 
 export default Header;
