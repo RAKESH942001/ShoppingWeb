@@ -1,10 +1,10 @@
 import { React } from 'react';
 import BrandLogo from './BrandLogo';
-import Categories from './Categories';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Icons from './Icons';
+import Categories from './Categories';
+import WebIcons from './WebIcons';
 
 const Header = (context) =>
 	<Box>
@@ -14,7 +14,7 @@ const Header = (context) =>
 			>
 				<BrandLogo { ...context }/>
 				<Categories { ...context }/>
-				<Icons { ...context }/>
+				<WebIcons { ...context }/>
 			</Toolbar>
 		</AppBar>
 	</Box>;
