@@ -31,6 +31,20 @@ const getToggleProduct = (context) => {
 		? { ...product, isFavourite: !data.isFavourite }
 		: product));
 };
+const getToggleLoading = (context) => {
+	const { state: { products }, data } = context;
+
+	return products.map((product) => (product.id === data.id
+		? { ...product, loading: true }
+		: product));
+};
+const getLoadingFalse = (context) => {
+	const { state: { products }, data } = context;
+
+	return products.map((product) => (product.id === data.id
+		? { ...product, loading: false }
+		: product));
+};
 
 const getFilter = (context) => {
 	const { state: { category }} = context;
@@ -46,7 +60,8 @@ const getId = (config) => config.productsList.map((product) =>
 	({ ...product,
 		id: rndString(config.idLength),
 		count: 1,
-		isFavourite: false }));
+		isFavourite: false,
+		loading: false	}));
 
 const addCount = (context) => {
 	const { state: { carts }, data } = context;
@@ -102,6 +117,8 @@ const cartManager = {
 	reduceCount,
 	addCount,
 	getToggleProduct,
+	getToggleLoading,
+	getLoadingFalse,
 	getCartTotal,
 	filters,
 };
