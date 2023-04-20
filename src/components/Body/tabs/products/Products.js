@@ -13,7 +13,7 @@ const Products = (context) => {
 		<Box>
 			<Grid
 				container={ true }
-				spacing={ { xs: 2, md: 3 } }
+				spacing={ { xs: 2, md: 26 } }
 				columns={ { xs: 1, sm: 8, md: 12 } }
 			>
 				{filteredProducts.map((product, key) =>

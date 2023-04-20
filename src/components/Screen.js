@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Tabs from './Body/tabs';
 import Footer from './Footer/Footer';
 import MainHeader from './MainHeader';
 import CarouselSlider from './Body/CarouselSlider';
+import Tabs from './Body/Tabs';
 
 const Screen = (context) =>
 	<Box sx={ { display: 'flex' } }>
