@@ -7,7 +7,7 @@ const CategoriesList = (context) => {
 	return (
 		<Select
 			label={ data }
-			value={ state.category }
+			value={ state.category === 'All' ? '' : state.category }
 			onChange={ handleChange }
 		>
 			{categories[data].map((product, key) =>

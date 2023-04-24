@@ -1,6 +1,3 @@
-/* eslint-disable max-lines-per-function */
-/* eslint-disable no-magic-numbers */
-/* eslint-disable max-len */
 import { Box, Grid } from '@mui/material';
 import React from 'react';
 import cartManager from '../../../../services/cartManager';

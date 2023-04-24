@@ -14,7 +14,7 @@ const Cart = (context) => {
 
 	return <Box>
 		<TableContainer component={ Paper }>
-			<Table sx={ { minWidth: 250 } }>
+			<Table sx={ { minWidth: 350 } }>
 				<TableHead>
 					<TableRow>
 						{cartHeader.map((header, key) =>

@@ -7,14 +7,15 @@ const Categories = (context) => {
 	const { config: { categories }} = context;
 
 	return (
-		<Box sx={ { display: { sm: 'flex', xs: 'block',
-			paddingLeft: '40px' }} }
+		<Box sx={ {
+			display: {
+				sm: 'flex', xs: 'block',
+				paddingLeft: '40px',
+			},
+		} }
 		>
-			{values(map(categories, (
-				type,
-				index, key
-			)	 =>
-				<Box key={ key }>
+			{values(map(categories, (type, index) =>
+				<Box key={ index }>
 					<CategoriesType { ...{ ...context, data: index } }/>
 				</Box>))}
 		</Box>);
