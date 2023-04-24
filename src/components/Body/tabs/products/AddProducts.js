@@ -4,7 +4,7 @@ import { Box, Grid } from '@mui/material';
 import cartManager from '../../../../services/cartManager';
 import LoginButton from './TestButton';
 import AddProductsDialog from './AddProductsDialog';
-const loadingTime = 2000;
+const loadingTime = 4000;
 
 const AddProducts = (context) => {
 	const { setState, state: { carts }, data } = context;
@@ -21,7 +21,8 @@ const AddProducts = (context) => {
 		setTimeout(() => {
 			setState((state) =>
 				({ ...state,
-					products: cartManager.getLoadingFalse(context) }));
+					products: cartManager
+						.getLoaded({ ...context, state }) }));
 		}, loadingTime);
 	};
 
@@ -36,7 +37,7 @@ const AddProducts = (context) => {
 				>
 					{data.loading ? 'added' : 'add to Cart'}
 				</LoginButton>
-				{data.dialogLogin && <AddProductsDialog { ...context }/>}
+				<AddProductsDialog { ...context }/>
 			</Grid>
 		</Box>
 	);

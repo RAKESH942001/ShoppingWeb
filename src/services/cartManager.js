@@ -38,11 +38,12 @@ const getToggleLoading = (context) => {
 		: product));
 };
 
-const getLoadingFalse = (context) => {
+const getLoaded = (context) => {
 	const { state: { products }, data } = context;
 
+	peek(data);
 	return products.map((product) => (product.id === data.id
-		? { ...product, loading: false }
+		? peek({ ...product, loading: false })
 		: product));
 };
 
@@ -118,7 +119,7 @@ const cartManager = {
 	addCount,
 	getToggleProduct,
 	getToggleLoading,
-	getLoadingFalse,
+	getLoaded,
 	getCartTotal,
 	filters,
 };
