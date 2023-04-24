@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 import { Box } from '@mui/material';
 import { React } from 'react';
 

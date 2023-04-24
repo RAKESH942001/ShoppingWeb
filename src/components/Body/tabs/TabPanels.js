@@ -8,7 +8,6 @@ const TabPanels = {
 	product: Products,
 	cart: Cart,
 	favourite: FavProductDisplay,
-	categoryWise: Products,
 	aboutUs: AboutUs,
 	faq: Faqs,
 };

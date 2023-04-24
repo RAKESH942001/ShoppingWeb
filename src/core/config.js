@@ -9,7 +9,6 @@ const config = {
 
 	tabLabel: ['product',
 		'cart',
-		'categoryWise',
 		'aboutUs',
 		'faq',
 		'favourite'],

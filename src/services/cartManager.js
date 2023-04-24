@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 import { peek } from '@laufire/utils/debug';
 import { rndString, rndValues } from '@laufire/utils/random';
 
@@ -89,13 +88,12 @@ const getProductAd = (context) => {
 		setInterval(() => setState((prevState) => ({
 			...prevState,
 			adImage: rndValues(productAd),
-		})), 5000));
+		}))));
 };
 
 const addProduct = (context) => {
 	const { data, state: { carts }} = context;
 
-	// Todo:Change  find into  contains.
 	return carts.find((cart) => cart.id === data.id)
 		? carts.map((cart) => (cart.id === data.id
 			? { ...cart, count: cart.count + 1 }

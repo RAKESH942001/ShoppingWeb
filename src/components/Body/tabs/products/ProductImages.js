@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Todo1:img width and height value should from config.
-
 const ProductImages = (context) => {
 	const { data: { img }} = context;
 

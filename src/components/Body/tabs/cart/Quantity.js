@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import { Box, Button } from '@mui/material';
 import React from 'react';
 import cartManager from '../../../../services/cartManager';
