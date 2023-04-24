@@ -7,6 +7,7 @@ const seed = {
 	products: cartManager.getId(config),
 	carts: [],
 	isLogin: false,
+	dialogLogin: false,
 	mobileOpen: false,
 };
 

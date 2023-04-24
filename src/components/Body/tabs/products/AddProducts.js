@@ -1,12 +1,10 @@
-/* eslint-disable no-magic-numbers */
 /* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Box, Grid } from '@mui/material';
 import cartManager from '../../../../services/cartManager';
 import LoginButton from './TestButton';
-
-// Todo1 :Change AddProducts to Singular.
-// Todo2:move the line no 18 to service file.
+import AddProductsDialog from './AddProductsDialog';
+const loadingTime = 2000;
 
 const AddProducts = (context) => {
 	const { setState, state: { carts }, data } = context;
@@ -24,20 +22,21 @@ const AddProducts = (context) => {
 			setState((state) =>
 				({ ...state,
 					products: cartManager.getLoadingFalse(context) }));
-		}, 2000);
+		}, loadingTime);
 	};
 
 	return (
 		<Box className="addProduct">
-			<Grid container={ true } xs={ 2 }>
+			<Grid container={ true } item={ true } xs={ 12 }>
 				<LoginButton
 					variant="contained"
 					color="inherit"
 					loading={ data.loading }
 					onClick={ onButtonClick }
 				>
-					{data.loading ? 'added' : 'addCart'}
+					{data.loading ? 'added' : 'add to Cart'}
 				</LoginButton>
+				{data.dialogLogin && <AddProductsDialog { ...context }/>}
 			</Grid>
 		</Box>
 	);

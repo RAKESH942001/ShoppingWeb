@@ -35,9 +35,10 @@ const getToggleLoading = (context) => {
 	const { state: { products }, data } = context;
 
 	return products.map((product) => (product.id === data.id
-		? { ...product, loading: true }
+		? { ...product, loading: true, dialogLogin: true }
 		: product));
 };
+
 const getLoadingFalse = (context) => {
 	const { state: { products }, data } = context;
 
@@ -61,7 +62,8 @@ const getId = (config) => config.productsList.map((product) =>
 		id: rndString(config.idLength),
 		count: 1,
 		isFavourite: false,
-		loading: false	}));
+		loading: false,
+		dialogLogin: false	}));
 
 const addCount = (context) => {
 	const { state: { carts }, data } = context;
