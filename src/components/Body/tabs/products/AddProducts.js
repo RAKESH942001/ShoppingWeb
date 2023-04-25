@@ -4,7 +4,7 @@ import { Box, Grid } from '@mui/material';
 import cartManager from '../../../../services/cartManager';
 import LoginButton from './TestButton';
 import AddProductsDialog from './AddProductsDialog';
-const loadingTime = 4000;
+const loadingTime = 2000;
 
 const AddProducts = (context) => {
 	const { setState, state: { carts }, data } = context;

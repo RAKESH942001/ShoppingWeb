@@ -2,7 +2,6 @@ import React from 'react';
 import Quantity from '../cart/Quantity';
 import { Button, Dialog, DialogActions,
 	DialogContent } from '@mui/material';
-import { peek } from '@laufire/utils/debug';
 
 const AddProductsDialog = (context) => {
 	const { setState, state, data } = context;
@@ -14,10 +13,11 @@ const AddProductsDialog = (context) => {
 				: product)) });
 	};
 
-	peek(data.dialogLogin);
 	return <div>
 		<Dialog open={ data.dialogLogin } onClose={ handleClose }>
-			<DialogContent><Quantity { ...context }/></DialogContent>
+			<DialogContent>
+				<Quantity { ...context }/>
+			</DialogContent>
 			<DialogActions>
 				<Button onClick={ handleClose }>ok</Button>
 			</DialogActions>

@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { rndString, rndValues } from '@laufire/utils/random';
 
 const filters = {
@@ -41,9 +40,8 @@ const getToggleLoading = (context) => {
 const getLoaded = (context) => {
 	const { state: { products }, data } = context;
 
-	peek(data);
 	return products.map((product) => (product.id === data.id
-		? peek({ ...product, loading: false })
+		? { ...product, loading: false }
 		: product));
 };
 
@@ -82,9 +80,8 @@ const reduceCount = (context) => {
 };
 
 const getProductAd = (context) => {
-	const { config: { productAd }, state, setState } = context;
+	const { config: { productAd }, setState } = context;
 
-	peek(state);
 	return (
 		setInterval(() => setState((prevState) => ({
 			...prevState,
