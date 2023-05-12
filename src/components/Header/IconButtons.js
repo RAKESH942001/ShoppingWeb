@@ -13,7 +13,6 @@ const Menu = (context) => {
 			aria-label="open drawer"
 			edge="start"
 			onClick={ handleDrawerToggle }
-			sx={ { mr: 2, display: { sm: 'none' }} }
 		>
 			<MenuIcon/>
 		</IconButton>);

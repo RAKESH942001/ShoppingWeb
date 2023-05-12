@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Drawer from './Drawer';
-import Header from './Header';
+import Header from './Header/Header';
 
 const MainHeader = (context) =>
 	<Box>
