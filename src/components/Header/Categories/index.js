@@ -14,9 +14,9 @@ const Categories = (context) => {
 			},
 		} }
 		>
-			{values(map(categories, (type, index) =>
-				<Box key={ index }>
-					<CategoriesType { ...{ ...context, data: index } }/>
+			{values(map(categories, (dummy, key) =>
+				<Box key={ key }>
+					<CategoriesType { ...{ ...context, data: key } }/>
 				</Box>))}
 		</Box>);
 };
